@@ -4,11 +4,7 @@ var ExtractTextPlugin = require('extract-text-webpack-plugin'); //css单独打�
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var openBrowserWebpackPlugin = require('open-browser-webpack-plugin');
 module.exports = {
-<<<<<<< HEAD
     entry:path.resolve('src/app.js'),
-=======
-    entry:path.resolve('noReduxsrc/app.js'),
->>>>>>> 8473aebd3a80fb27b7f8a18dea75e607a902f5e2
     output:{
         path:'./build',
         filename:'bundle.js',
@@ -20,11 +16,7 @@ module.exports = {
     plugins:[
         new HtmlWebpackPlugin({
             title:'webpack',
-<<<<<<< HEAD
             template:'./src/index.html',
-=======
-            template:'./noReduxsrc/index.html',
->>>>>>> 8473aebd3a80fb27b7f8a18dea75e607a902f5e2
             filename:'index.html'
         }),
         new openBrowserWebpackPlugin({url:'http://localhost:8800'})
@@ -44,10 +36,7 @@ module.exports = {
         loaders:[
             {
                 test: /\.js$/, //正则，匹配到的文件后缀名
-<<<<<<< HEAD
                 exclude:/node_modules/,
-=======
->>>>>>> 8473aebd3a80fb27b7f8a18dea75e607a902f5e2
                 loader: 'babel'
             },
             //加载css代码
